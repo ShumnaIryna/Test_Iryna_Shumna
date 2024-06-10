@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TEST</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!---------------------------- header -->
+    <header class="header">
+      <div class="top">
+        <div class="top__inner container">
+          <ul class="top__list">
+            <li class="top__item">
+              <a href="#" class="top__link">Доставка і оплати</a>
+            </li>
+            <li class="top__item">
+              <a href="#" class="top__link">Програма лояльності</a>
+            </li>
+            <li class="top__item">
+              <a href="#" class="top__link">Про нас</a>
+            </li>
+            <li class="top__item">
+              <a href="#" class="top__link">Контакти</a>
+            </li>
+            <li class="top__item">
+              <a href="#" class="top__link">Магазини</a>
+            </li>
+          </ul>
+          <ul class="top__actions">
+            <li class="top__actions__item">
+              <a href="#" class="top__actions__link">
+                <img src="images/svg/heart.svg" alt="photo-actions" />
+                Улюблені товари
+              </a>
+            </li>
+            <li class="top__actions__item">
+              <a href="#" class="top__actions__link">
+                <img src="images/svg/scales.svg" alt="photo-actions" />
+                Порівняти
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <div class="container">
+          <div class="main__inner">
+            <img class="main__logo" src="images/logo.png" alt="photo-logo" />
+            <p class="main__logo-title">Logo</p>
+            <!-------- mobile-menu ------>
+
+            <div class="mobile-menu-wr">
+              <ul class="mobile-menu">
+                <li class="mobile-menu-item menu-holder">
+                  <div class="hamburger"></div>
+                  <input class="hamburger-trigger" type="checkbox" />
+                  <ul class="hamburger-menu">
+                    <li class="active"><a href="#">Головна</a></li>
+                    <li><a href="#">Котам</a></li>
+                    <li><a href="#">Собакам</a></li>
+                    <li><a href="#">Птахам</a></li>
+                    <li><a href="#">Гризунам</a></li>
+                    <li><a href="#">Рибам</a></li>
+                  </ul>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="#" class=""><img src="images/svg/call-mob.svg" /></a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="#" class=""><img src="images/svg/user-mob.svg" /></a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="#" class=""
+                    ><img src="images/svg/basket-mob.svg"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+
+            <form class="main__search">
+              <input class="main__input" type="text" placeholder="Я шукаю..." />
+              <button class="main__btn">
+                <img src="images/svg/search.svg" alt="photo-search" />
+              </button>
+            </form>
+            <div class="main__contacts">
+              <img class="main__call" src="images/svg/phone.svg" />
+              <div>
+                <a class="main__phone" href="tel:0800 333 133">0800 333 133</a>
+                <p class="main__text">Зателефонуйте нам</p>
+              </div>
+            </div>
+            <ul class="main__info">
+              <li class="main__info-item">
+                <a href="#" class="main__info-link"
+                  ><img src="images/svg/user.svg"
+                /></a>
+              </li>
+              <li class="main__info-item">
+                <a href="#" class="main__info-link"
+                  ><img src="images/svg/basket.svg"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="container">
+          <ul class="nav__item">
+            <li class="nav__list">
+              <a href="#" class="nav__link active">Головна</a>
+            </li>
+            <li class="nav__list">
+              <a href="#" class="nav__link">Котам</a>
+            </li>
+            <li class="nav__list">
+              <a href="#" class="nav__link">Собакам</a>
+            </li>
+            <li class="nav__list">
+              <a href="#" class="nav__link">Птахам</a>
+            </li>
+            <li class="nav__list">
+              <a href="#" class="nav__link">Гризунам</a>
+            </li>
+            <li class="nav__list">
+              <a href="#" class="nav__link">Рибам</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="content-bg">
+          <h2 class="content__title">Новинка!</h2>
+          <p class="content__desc">
+            Необхідні товаари для вас та<br />
+            вашого улюбленця.
+          </p>
+          <button class="btn btn-content">
+            Дізнатись більше
+            <img
+              class="arrow-right"
+              alt="arrow right"
+              src="images/svg/arrow-right.svg" />
+          </button>
+        </div>
+        <div class="dots-sliders">
+          <div class="dot-slider dot-slider-active"></div>
+          <div class="dot-slider"></div>
+          <div class="dot-slider"></div>
+        </div>
+      </div>
+    </section>
+    <section class="novelty">
+      <div class="container">
+        <h2 class="novelty__title title">Новинки</h2>
+        <div class="novelty__product">
+          <div class="novelty__box">
+            <img class="novelty__img" src="images/svg/novelty.svg" />
+            <div class="details">
+              <p class="details-info">Артикул: 48952746</p>
+              <div class="details-rating">
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <a href="#" class="details-rating__reviews">(8 відгуків)</a>
+              </div>
+            </div>
+            <h4 class="subtitle">Корм Royal Canin</h4>
+            <p class="description">
+              вологий корм у соусі для кошенят на кожен день (до 12 місяців)
+            </p>
+            <div class="buy">
+              <button class="buy__btn" type="button">Купити</button>
+              <span class="buy__price"
+                >550 <span class="buy__price-currency">грн</span></span
+              >
+            </div>
+          </div>
+          <div class="novelty__box">
+            <img class="novelty__img" src="images/svg/novelty.svg" />
+            <div class="details">
+              <p class="details-info">Артикул: 48952746</p>
+              <div class="details-rating">
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <a href="#" class="details-rating__reviews">(12 відгуків)</a>
+              </div>
+            </div>
+            <h4 class="subtitle">Корм Royal Canin</h4>
+            <p class="description">
+              вологий корм у соусі для кошенят на кожен день (до 12 місяців)
+            </p>
+            <div class="buy">
+              <button class="buy__btn" type="button">Купити</button>
+              <span class="buy__price"
+                >550 <span class="buy__price-currency">грн</span></span
+              >
+            </div>
+          </div>
+          <div class="novelty__box">
+            <img class="novelty__img" src="images/svg/novelty.svg" />
+            <div class="details">
+              <p class="details-info">Артикул: 48952746</p>
+              <div class="details-rating">
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <a href="#" class="details-rating__reviews">(24 відгуків)</a>
+              </div>
+            </div>
+            <h4 class="subtitle">Корм Royal Canin</h4>
+            <p class="description">
+              вологий корм у соусі для кошенят на кожен день (до 12 місяців)
+            </p>
+            <div class="buy">
+              <button class="buy__btn" type="button">Купити</button>
+              <span class="buy__price"
+                >550 <span class="buy__price-currency">грн</span></span
+              >
+            </div>
+          </div>
+          <div class="novelty__box">
+            <img class="novelty__img" src="images/svg/novelty.svg" />
+            <div class="details">
+              <p class="details-info">Артикул: 48952746</p>
+              <div class="details-rating">
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <a href="#" class="details-rating__reviews">(1 відгуків)</a>
+              </div>
+            </div>
+            <h4 class="subtitle">Корм Royal Canin</h4>
+            <p class="description">
+              вологий корм у соусі для кошенят на кожен день (до 12 місяців)
+            </p>
+            <div class="buy">
+              <button class="buy__btn" type="button">Купити</button>
+              <span class="buy__price"
+                >550 <span class="buy__price-currency">грн</span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="more">
+          <a class="more__btn"
+            >Показати ще
+            <img src="images/svg/arrow-down.svg" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="selling">
+      <div class="container">
+        <h2 class="selling__title title">Хіти продажу</h2>
+        <div class="selling__product">
+          <div class="selling__box">
+            <span class="selling__box-label">Новинка</span>
+            <img class="selling__img" src="images/svg/selling-1.svg" />
+            <div class="details">
+              <p class="details-info">Артикул: 48952746</p>
+              <div class="details-rating">
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <a href="#" class="details-rating__reviews">(8 відгуків)</a>
+              </div>
+            </div>
+            <h4 class="subtitle">Корм Royal Canin</h4>
+            <p class="description">
+              вологий корм у соусі для кошенят на кожен день (до 12 місяців)
+            </p>
+            <div class="buy">
+              <button class="buy__btn" type="button">Купити</button>
+              <div class="dis-flex-col">
+                <span class="buy__price-old">700 грн</span>
+                <span class="buy__price"
+                  >550 <span class="buy__price-currency">грн</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="selling__box">
+            <img class="selling__img" src="images/svg/novelty.svg" />
+            <div class="details">
+              <p class="details-info">Артикул: 48952746</p>
+              <div class="details-rating">
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <a href="#" class="details-rating__reviews">(12 відгуків)</a>
+              </div>
+            </div>
+            <h4 class="subtitle">Корм Royal Canin</h4>
+            <p class="description">
+              вологий корм у соусі для кошенят на кожен день (до 12 місяців)
+            </p>
+            <div class="buy">
+              <button class="buy__btn" type="button">Купити</button>
+              <span class="buy__price"
+                >550 <span class="buy__price-currency">грн</span></span
+              >
+            </div>
+          </div>
+          <div class="selling__box">
+            <img class="selling__img" src="images/svg/selling-2.svg" />
+            <div class="details">
+              <p class="details-info">Артикул: 48952746</p>
+              <div class="details-rating">
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <a href="#" class="details-rating__reviews">(24 відгуків)</a>
+              </div>
+            </div>
+            <h4 class="subtitle">Корм Royal Canin</h4>
+            <p class="description">
+              вологий корм у соусі для кошенят на кожен день (до 12 місяців)
+            </p>
+            <div class="buy">
+              <button class="buy__btn" type="button">Купити</button>
+              <span class="buy__price"
+                >550 <span class="buy__price-currency">грн</span></span
+              >
+            </div>
+          </div>
+          <div class="selling__box">
+            <img class="selling__img" src="images/svg/selling-3.svg" />
+            <div class="details">
+              <p class="details-info">Артикул: 48952746</p>
+              <div class="details-rating">
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-fill.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <img src="images/svg/star-empty.svg" />
+                <a href="#" class="details-rating__reviews">(1 відгуків)</a>
+              </div>
+            </div>
+            <h4 class="subtitle">Корм Royal Canin</h4>
+            <p class="description">
+              вологий корм у соусі для кошенят на кожен день (до 12 місяців)
+            </p>
+            <div class="buy">
+              <button class="buy__btn" type="button">Купити</button>
+              <div class="dis-flex-col">
+                <span class="buy__price-old">700 грн</span>
+                <span class="buy__price"
+                  >550 <span class="buy__price-currency">грн</span></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more">
+          <a class="more__btn"
+            >Показати ще
+            <img src="images/svg/arrow-down.svg" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="addition">
+      <div class="container">
+        <div class="addition__bg">
+          <h3 class="addition__title">
+            Завантажити наш <br />мобільній додаток
+          </h3>
+          <p class="addition__desc">
+            Використовуйте усі можливості сучасних технологій.<br />
+            Сервіс доступний 24/7.
+          </p>
+          <ul class="stores">
+            <li class="stores__item">
+              <a class="stores__link" href="#" target="_blank">
+                <img src="images/store-1.png" />
+              </a>
+            </li>
+            <li class="stores__item">
+              <a class="stores__link" href="#" target="_blank">
+                <img src="images/store-2.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="categories">
+      <div class="container">
+        <h2 class="categories__title title">Популярні категорії</h2>
+        <div class="categories__product">
+          <div class="categories__box categories__box-first">
+            <h4 class="categories__subtitle">Іграшки для котів</h4>
+            <a class="categories__btn">
+              <img src="images/svg/arrow-right-wh.svg" />
+            </a>
+          </div>
+          <div class="categories__box categories__box-second">
+            <h4 class="categories__subtitle">Одяг для котів</h4>
+            <a class="categories__btn">
+              <img src="images/svg/arrow-right-wh.svg" />
+            </a>
+          </div>
+          <div class="categories__box categories__box-third">
+            <h4 class="categories__subtitle">Корм для птахів</h4>
+            <a class="categories__btn">
+              <img src="images/svg/arrow-right-wh.svg" />
+            </a>
+          </div>
+          <div class="categories__box categories__box-fourth">
+            <h4 class="categories__subtitle">Корм для рибок</h4>
+            <a class="categories__btn">
+              <img src="images/svg/arrow-right-wh.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brands">
+      <div class="container">
+        <h2 class="brands__title title">Наші бренди</h2>
+        <div class="brands__list">
+          <div class="brands__box">
+            <img src="images/brands-1.png" />
+          </div>
+          <div class="brands__box">
+            <img src="images/brands-2.png" />
+          </div>
+
+          <div class="brands__box">
+            <img src="images/brands-3.png" />
+          </div>
+          <div class="brands__box">
+            <img src="images/brands-4.png" />
+          </div>
+
+          <button class="brands__arrows-prev">
+            <img src="images/svg/arrow-prev.svg" />
+          </button>
+          <button class="brands__arrows-next">
+            <img src="images/svg/arrow-next.svg" />
+          </button>
+        </div>
+        <div class="dots-container">
+          <div class="dot dot-active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </section>
+    <section class="subscription">
+      <div class="container">
+        <div class="subscription__inform">
+          <h4 class="subscription__title">Підпишись на наші новини</h4>
+          <form class="subscription__search">
+            <input
+              class="subscription__input"
+              type="text"
+              placeholder="Ваша пошта" />
+            <button class="subscription__btn" type="submit">Підписатись</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__social">
+          <img class="footer__img" src="images/logo.png" alt="photo logo" />
+          <img
+            class="footer__img-mob"
+            src="images/logo-mob.png"
+            alt="photo logo" />
+          <div class="footer__social-right">
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <img
+                  src="images/svg/partners-1.svg"
+                  alt="photo partners logo" />
+              </li>
+              <li class="footer__social-item">
+                <img
+                  src="images/svg/partners-2.svg"
+                  alt="photo partners logo" />
+              </li>
+            </ul>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img
+                    src="images/svg/linkedin.svg"
+                    alt="photo logo linkedin" />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img
+                    src="images/svg/facebook.svg"
+                    alt="photo logo facebook" />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img
+                    src="images/svg/instagram.svg"
+                    alt="photo logo instagram" />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img src="images/svg/twitter.svg" alt="photo logo twitter" />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img src="images/svg/youtube.svg" alt="photo logo youtube" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <ul class="footer-nav__list">
+            <h4 class="footer__title">Категорії</h4>
+            <li><a href="#">Котам</a></li>
+            <li><a href="#">Собакам</a></li>
+            <li><a href="#">Птахам</a></li>
+            <li><a href="#">Гризунам</a></li>
+            <li><a href="#">Рибам</a></li>
+          </ul>
+          <ul class="footer-nav__list">
+            <h4 class="footer__title">Клієнтам</h4>
+            <li><a href="#">Доставка</a></li>
+            <li>
+              <a href="#">Повернення і обмін</a>
+            </li>
+            <li>
+              <a href="#">Програма лояльності</a>
+            </li>
+            <li><a href="#">Наші магазини</a></li>
+            <li><a href="#">Про компанію</a></li>
+          </ul>
+          <ul class="footer-nav__list">
+            <h4 class="footer__title">Корисне</h4>
+            <li>
+              <a href="#">Договір оферти</a>
+            </li>
+            <li>
+              <a href="#">Мапа сайту</a>
+            </li>
+            <li><a href="#">Відгуки</a></li>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Бренди</a></li>
+          </ul>
+          <div class="footer-nav__list">
+            <h4 class="footer__title">Контакти</h4>
+            <li><a class="strong" href="0800 333 133">0800 333 133</a></li>
+            <p>Безкоштовно по Україні</p>
+            <p>Графік роботи call-центру:</p>
+            <p class="strong">Пн.-Пт. 09.00-20.00</p>
+            <li class="footer-nav__mail">
+              <a class="strong" href="mailto:nfo@eurozoo.com"
+                >nfo@eurozoo.com</a
+              >
+            </li>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p class="footer-info__copyright">
+            © 2024 Інтернет-магазин зоотоварів <br />EuroZoo. Всі права захищені
+          </p>
+          <a href="#">Політика конфіденційності</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
