@@ -317,6 +317,10 @@ body {
 .dot-slider-active {
   background-color: #ff7d01;
 }
+
+.content-bg.swiper-slide {
+  display: block;
+}
 /* ---------------------------novelty--------------------------- */
 .novelty {
   padding-bottom: 70px;
@@ -335,7 +339,7 @@ body {
 
 .novelty__box {
   padding: 15px 20px 20px;
-  flex: 1 1 200px;
+  flex: 1 1 275px;
 }
 
 .novelty__box:hover {
@@ -452,7 +456,7 @@ body {
   position: relative;
   padding: 0px 20px 20px;
   background-color: #ffffff;
-  flex: 1 1 200px;
+  flex: 1 1 275px;
 }
 
 .selling__box:hover {
@@ -539,6 +543,7 @@ body {
   cursor: pointer;
   z-index: 2;
 }
+
 /* ----------------------------categories---------------------------- */
 .categories {
   padding-bottom: 70px;
@@ -653,12 +658,26 @@ body {
 .brands__title {
   padding-bottom: 38px;
 }
-
-.brands__list {
+.swiper-container {
   position: relative;
+}
+.swiper-wrapper {
+  box-sizing: border-box;
+}
+
+.swiper-slide {
+  display: flex;
+}
+
+.swiper-pagination {
+  position: relative;
+}
+.brands__list {
+  /* position: relative; */
   display: flex;
   gap: 20px;
   align-items: center;
+  padding: 0 20px;
 }
 
 .brands__arrows-prev,
@@ -675,16 +694,26 @@ body {
   cursor: pointer;
 }
 
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  /* content: 'prev'; */
+  display: none;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  /* content: 'next'; */
+  display: none;
+}
+
 .brands__arrows-prev {
   left: 0;
   top: 35%;
-  transform: translateX(-50%);
 }
 
 .brands__arrows-next {
   right: 0;
   top: 35%;
-  transform: translateX(50%);
 }
 
 .brands__arrows-prev:hover,
@@ -711,18 +740,34 @@ body {
   margin-top: 24px;
 }
 
-.dot {
+.swiper-pagination > span {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0 10px;
+  /* color: transparent; */
+  /* background-color: #ffffff; */
+  border: 1px solid #ff7d01;
+}
+.swiper-pagination-bullet {
+  background-color: transparent;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff7d01;
+}
+/* .dot {
   width: 14px;
   height: 14px;
   border-radius: 50%;
   margin: 0 10px;
   background-color: transparent;
   border: 1px solid #ff7d01;
-}
+} */
 
-.dot-active {
+/* .dot-active {
   background-color: #ff7d01;
-}
+} */
 /* ---------------------------subscription--------------------------- */
 .subscription {
   padding: 39px 0;
@@ -1258,5 +1303,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-nav__list {
+    flex-basis: 165px;
   }
 }

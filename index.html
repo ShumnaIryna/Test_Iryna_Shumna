@@ -7,12 +7,17 @@
     <title>TEST</title>
 
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="vendor/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!---------------------------- header -->
@@ -142,25 +147,59 @@
     </header>
     <section class="content">
       <div class="container">
-        <div class="content-bg">
-          <h2 class="content__title">Новинка!</h2>
-          <p class="content__desc">
-            Необхідні товаари для вас та<br />
-            вашого улюбленця.
-          </p>
-          <button class="btn btn-content">
-            Дізнатись більше
-            <img
-              class="arrow-right"
-              alt="arrow right"
-              src="images/svg/arrow-right.svg" />
-          </button>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="content-bg swiper-slide">
+              <h2 class="content__title">Новинка!</h2>
+              <p class="content__desc">
+                Необхідні товари для вас та<br />
+                вашого улюбленця.
+              </p>
+              <button class="btn btn-content">
+                Дізнатись більше
+                <img
+                  class="arrow-right"
+                  alt="arrow right"
+                  src="images/svg/arrow-right.svg" />
+              </button>
+            </div>
+            <div class="content-bg swiper-slide">
+              <h2 class="content__title">Новинка 1</h2>
+              <!-- <p class="content__desc">
+                Необхідні товаари для вас та<br />
+                вашого улюбленця.
+              </p>
+              <button class="btn btn-content">
+                Дізнатись більше
+                <img
+                  class="arrow-right"
+                  alt="arrow right"
+                  src="images/svg/arrow-right.svg" />
+              </button> -->
+            </div>
+            <div class="content-bg swiper-slide">
+              <h2 class="content__title">Новинка 2</h2>
+              <!-- <p class="content__desc">
+                Необхідні товаари для вас та<br />
+                вашого улюбленця.
+              </p>
+              <button class="btn btn-content">
+                Дізнатись більше
+                <img
+                  class="arrow-right"
+                  alt="arrow right"
+                  src="images/svg/arrow-right.svg" />
+              </button> -->
+            </div>
+          </div>
+          <!-- end swiper-wrapper -->
+          <div class="dots-sliders swiper-pagination">
+            <!-- <div class="dot-slider dot-slider-active"></div>
+            <div class="dot-slider"></div>
+            <div class="dot-slider"></div> -->
+          </div>
         </div>
-        <div class="dots-sliders">
-          <div class="dot-slider dot-slider-active"></div>
-          <div class="dot-slider"></div>
-          <div class="dot-slider"></div>
-        </div>
+        <!-- end swiper -->
       </div>
     </section>
     <section class="novelty">
@@ -447,34 +486,70 @@
     <section class="brands">
       <div class="container">
         <h2 class="brands__title title">Наші бренди</h2>
-        <div class="brands__list">
-          <div class="brands__box">
-            <img src="images/brands-1.png" />
-          </div>
-          <div class="brands__box">
-            <img src="images/brands-2.png" />
-          </div>
 
-          <div class="brands__box">
-            <img src="images/brands-3.png" />
-          </div>
-          <div class="brands__box">
-            <img src="images/brands-4.png" />
-          </div>
-
-          <button class="brands__arrows-prev">
+        <!--  swiper -->
+        <div class="swiper-container">
+          <button class="brands__arrows-prev swiper-button-prev">
             <img src="images/svg/arrow-prev.svg" />
           </button>
-          <button class="brands__arrows-next">
+          <button class="brands__arrows-next swiper-button-next">
             <img src="images/svg/arrow-next.svg" />
           </button>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="brands__list swiper-slide">
+                <div class="brands__box">
+                  <img src="images/brands-1.png" />
+                </div>
+                <div class="brands__box">
+                  <img src="images/brands-2.png" />
+                </div>
+                <div class="brands__box">
+                  <img src="images/brands-3.png" />
+                </div>
+                <div class="brands__box">
+                  <img src="images/brands-4.png" />
+                </div>
+              </div>
+
+              <div class="brands__list swiper-slide">
+                <div class="brands__box">
+                  <img src="images/brands-1.png" />
+                </div>
+                <div class="brands__box">
+                  <img src="images/brands-2.png" />
+                </div>
+                <div class="brands__box">
+                  <img src="images/brands-3.png" />
+                </div>
+                <div class="brands__box">
+                  <img src="images/brands-4.png" />
+                </div>
+              </div>
+
+              <div class="brands__list swiper-slide">
+                <div class="brands__box">
+                  <img src="images/brands-1.png" />
+                </div>
+                <div class="brands__box">
+                  <img src="images/brands-2.png" />
+                </div>
+                <div class="brands__box">
+                  <img src="images/brands-3.png" />
+                </div>
+                <div class="brands__box">
+                  <img src="images/brands-4.png" />
+                </div>
+              </div>
+            </div>
+
+            <div class="dots-container swiper-pagination"></div>
+          </div>
+          <!-- end swiper -->
         </div>
-        <div class="dots-container">
-          <div class="dot dot-active"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
+        <!--end swiper-container -->
       </div>
+      <!-- end container -->
     </section>
     <section class="subscription">
       <div class="container">
@@ -601,5 +676,43 @@
       </div>
     </footer>
 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="vendor/swiper-bundle.min.js"></script>
+
+    <script>
+      var content_slider = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // autoplay: {
+        //   delay: 5000,
+        // },
+      });
+    </script>
+
+    <script>
+      var brands_slider = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
