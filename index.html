@@ -5,17 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>TEST</title>
-
     <link rel="stylesheet" href="css/reset.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -194,9 +189,7 @@
           </div>
           <!-- end swiper-wrapper -->
           <div class="dots-sliders swiper-pagination">
-            <!-- <div class="dot-slider dot-slider-active"></div>
-            <div class="dot-slider"></div>
-            <div class="dot-slider"></div> -->
+           
           </div>
         </div>
         <!-- end swiper -->
@@ -676,8 +669,6 @@
       </div>
     </footer>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <script src="vendor/swiper-bundle.min.js"></script>
 
     <script>
@@ -685,17 +676,13 @@
         direction: "horizontal",
         loop: true,
         slidesPerView: 1,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
-        // autoplay: {
-        //   delay: 5000,
-        // },
+        autoplay: {
+          delay: 5000,
+        },
       });
     </script>
 
