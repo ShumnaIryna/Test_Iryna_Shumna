@@ -734,7 +734,8 @@ body {
   max-width: 220px;
 }
 
-.dots-container {
+.dots-container,
+.dots-sliders {
   display: flex;
   justify-content: center;
   margin-top: 24px;
@@ -1308,6 +1309,6 @@ body {
 
 @media (max-width: 420px) {
   .footer-nav__list {
-    flex-basis: 165px;
+    flex-basis: 150px;
   }
 }
