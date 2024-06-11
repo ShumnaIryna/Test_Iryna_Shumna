@@ -142,7 +142,7 @@
     </header>
     <section class="content">
       <div class="container">
-        <div class="swiper">
+        <div class="swiper" id="top-slider">
           <div class="swiper-wrapper">
             <div class="content-bg swiper-slide">
               <h2 class="content__title">Новинка!</h2>
@@ -160,37 +160,15 @@
             </div>
             <div class="content-bg swiper-slide">
               <h2 class="content__title">Новинка 1</h2>
-              <!-- <p class="content__desc">
-                Необхідні товаари для вас та<br />
-                вашого улюбленця.
-              </p>
-              <button class="btn btn-content">
-                Дізнатись більше
-                <img
-                  class="arrow-right"
-                  alt="arrow right"
-                  src="images/svg/arrow-right.svg" />
-              </button> -->
             </div>
             <div class="content-bg swiper-slide">
               <h2 class="content__title">Новинка 2</h2>
-              <!-- <p class="content__desc">
-                Необхідні товаари для вас та<br />
-                вашого улюбленця.
-              </p>
-              <button class="btn btn-content">
-                Дізнатись більше
-                <img
-                  class="arrow-right"
-                  alt="arrow right"
-                  src="images/svg/arrow-right.svg" />
-              </button> -->
             </div>
           </div>
           <!-- end swiper-wrapper -->
-          <div class="dots-sliders swiper-pagination">
-           
-          </div>
+          <div
+            class="dots-sliders swiper-pagination"
+            id="top-slider-dots"></div>
         </div>
         <!-- end swiper -->
       </div>
@@ -200,7 +178,7 @@
         <h2 class="novelty__title title">Новинки</h2>
         <div class="novelty__product">
           <div class="novelty__box">
-            <img class="novelty__img" src="images/svg/novelty.svg" />
+            <img class="novelty__img" src="images/novelty.png" />
             <div class="details">
               <p class="details-info">Артикул: 48952746</p>
               <div class="details-rating">
@@ -224,7 +202,7 @@
             </div>
           </div>
           <div class="novelty__box">
-            <img class="novelty__img" src="images/svg/novelty.svg" />
+            <img class="novelty__img" src="images/novelty.png" />
             <div class="details">
               <p class="details-info">Артикул: 48952746</p>
               <div class="details-rating">
@@ -248,7 +226,7 @@
             </div>
           </div>
           <div class="novelty__box">
-            <img class="novelty__img" src="images/svg/novelty.svg" />
+            <img class="novelty__img" src="images/novelty.png" />
             <div class="details">
               <p class="details-info">Артикул: 48952746</p>
               <div class="details-rating">
@@ -272,7 +250,7 @@
             </div>
           </div>
           <div class="novelty__box">
-            <img class="novelty__img" src="images/svg/novelty.svg" />
+            <img class="novelty__img" src="images/novelty.png" />
             <div class="details">
               <p class="details-info">Артикул: 48952746</p>
               <div class="details-rating">
@@ -310,7 +288,7 @@
         <div class="selling__product">
           <div class="selling__box">
             <span class="selling__box-label">Новинка</span>
-            <img class="selling__img" src="images/svg/selling-1.svg" />
+            <img class="selling__img" src="images/selling-1.png" />
             <div class="details">
               <p class="details-info">Артикул: 48952746</p>
               <div class="details-rating">
@@ -337,7 +315,7 @@
             </div>
           </div>
           <div class="selling__box">
-            <img class="selling__img" src="images/svg/novelty.svg" />
+            <img class="selling__img" src="images/novelty.png" />
             <div class="details">
               <p class="details-info">Артикул: 48952746</p>
               <div class="details-rating">
@@ -361,7 +339,7 @@
             </div>
           </div>
           <div class="selling__box">
-            <img class="selling__img" src="images/svg/selling-2.svg" />
+            <img class="selling__img" src="images/selling-2.png" />
             <div class="details">
               <p class="details-info">Артикул: 48952746</p>
               <div class="details-rating">
@@ -385,7 +363,7 @@
             </div>
           </div>
           <div class="selling__box">
-            <img class="selling__img" src="images/svg/selling-3.svg" />
+            <img class="selling__img" src="images/selling-3.png" />
             <div class="details">
               <p class="details-info">Артикул: 48952746</p>
               <div class="details-rating">
@@ -488,7 +466,7 @@
           <button class="brands__arrows-next swiper-button-next">
             <img src="images/svg/arrow-next.svg" />
           </button>
-          <div class="swiper">
+          <div class="swiper" id="brands-slider">
             <div class="swiper-wrapper">
               <div class="brands__list swiper-slide">
                 <div class="brands__box">
@@ -536,7 +514,9 @@
               </div>
             </div>
 
-            <div class="dots-container swiper-pagination"></div>
+            <div
+              class="dots-container swiper-pagination"
+              id="brands-slider-dots"></div>
           </div>
           <!-- end swiper -->
         </div>
@@ -672,22 +652,20 @@
     <script src="vendor/swiper-bundle.min.js"></script>
 
     <script>
-      var content_slider = new Swiper(".swiper", {
+      var content_slider = new Swiper("#top-slider", {
         direction: "horizontal",
         loop: true,
         slidesPerView: 1,
         pagination: {
-          el: ".swiper-pagination",
+          el: "#top-slider-dots",
           clickable: true,
         },
         autoplay: {
           delay: 5000,
         },
       });
-    </script>
 
-    <script>
-      var brands_slider = new Swiper(".swiper", {
+      var brands_slider = new Swiper("#brands-slider", {
         direction: "horizontal",
         loop: true,
         slidesPerView: 1,
@@ -696,7 +674,7 @@
           prevEl: ".swiper-button-prev",
         },
         pagination: {
-          el: ".swiper-pagination",
+          el: "#brands-slider-dots",
           clickable: true,
         },
       });
