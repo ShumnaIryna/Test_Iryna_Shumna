@@ -1299,6 +1299,9 @@ body {
 }
 
 @media (max-width: 420px) {
+  .brands__box {
+    flex-basis: 114px;
+  }
   .footer-nav__list {
     flex-basis: 150px;
   }
